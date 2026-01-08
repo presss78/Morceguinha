@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite — Yasmim</title>
+  <style>
+    :root {
+      --green: #9b5cff; /* roxo */
+      --dark: #020402;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url('Sigilkore Emo Gothic Dark Black Wallpaper _ 4K Version.jfif') center / cover no-repeat fixed;
+      color: var(--green);
+      font-family: 'Courier New', monospace;
+      overflow-x: hidden;
+    }
+
+    /* HUD gótico de fundo */
+    .hud {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(transparent 95%, rgba(0,255,102,0.08) 96%),
+        linear-gradient(90deg, transparent 95%, rgba(0,255,102,0.08) 96%),
+        radial-gradient(circle at 20% 30%, rgba(0,255,102,0.08), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(0,255,102,0.06), transparent 45%);
+      background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ornamentos góticos */
+    .sigil {
+      position: fixed;
+      border: 1px solid rgba(0,255,102,0.25);
+      width: 120px;
+      height: 120px;
+      transform: rotate(45deg);
+      opacity: 0.25;
+      z-index: 0;
+    }
+
+    .sigil.left { top: 12%; left: 6%; }
+    .sigil.right { bottom: 10%; right: 8%; }
+
+    /* Navegação por abas */
+    .tabs {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+
+    .tabs button {
+      background: transparent;
+      border: 1px solid rgba(0,255,102,0.4);
+      color: var(--green);
+      padding: 12px 18px;
+      margin: 6px;
+      cursor: pointer;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+
+    .tabs button:hover,
+    .tabs button.active {
+      background: rgba(0,255,102,0.12);
+    }
+
+    /* Conteúdo */
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px 120px;
+      text-align: center;
+      line-height: 1.9;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 24px;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      font-weight: normal;
+    }
+
+    p {
+      white-space: pre-line;
+      margin-bottom: 28px;
+    }
+
+    .divider {
+      margin: 64px auto;
+      width: 140px;
+      height: 1px;
+      background: var(--green);
+      opacity: 0.4;
+    }
+
+    footer {
+      margin-top: 120px;
+      font-size: 12px;
+      opacity: 0.45;
+    }
+      /* Pixel art morcegos (SVG embutido) */
+    /* Pixel art morcegos (SVG embutido) */
+    .pixel-bg {
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 12 6'><rect width='12' height='6' fill='black'/><path d='M1 2h2v1h1v1h2V3h2v1h1V3h2V2H9V1H7v1H5V1H3v1H1z' fill='%239b5cff'/></svg>");
+      background-repeat: repeat;
+      background-size: 120px 60px;
+      opacity: 0.05;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Pixel world decorativo */
+    .pixel-world {
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 16 16'><rect width='16' height='16' fill='black'/><path d='M2 12h12v2H2zM4 10h2v2H4zM6 8h2v4H6zM8 9h2v3H8zM10 7h2v5h-2z' fill='%2300ff66'/></svg>");
+      background-repeat: repeat;
+      background-size: 160px 160px;
+      opacity: 0.05;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pixel-bg"></div>
+  <div class="pixel-world"></div>
+  <div class="sigil left"></div>
+  <div class="sigil right"></div>
+
+  <div class="tabs">
+    <button class="active" onclick="openTab('carta')">CARTA</button>
+    <button onclick="openTab('conto')">CONTO DOS GATINHOS</button>
+    <button onclick="openTab('poemas')">POEMAS</button>
+  </div>
+
+  <section id="carta" class="content active">
+    <h1>FELIZ ANIVERSÁRIO, MORCEGUINHAAAA</h1>
+    <p>
+FELIZ ANIIVERSARIOOOO MORCEGUINHAAAAAAAA
+
+Então bb, já faz sla quantos meses que eu conheci a melhor pessoa que eu poderia conhecer na minha vida, aquela que me faz ser eu, que sonha comigo, que pensa como eu que ama como eu amo, você sabe mais que ninguém que somos a copia um do outro e desde o dia em que te conheci a cada dia tenho mais certeza disso.
+
+Mas chega de falar de mim, hoje 08/01/2026 data essa que está virando a minha favorita de todo esse calendário colonialista que usamos, pois nesse dia nasceu youu e essa pretinha divonica que nasceu hj, eu so quero que ela tenha tudooo que esse universo bom possa dar, e enquanto eu viver irei fazer de tudo pra que você tenha morceguinhaaa.
+
+E em próximas datas iguais a essa gatinha nos vamos estar juntinhos porque eu vou te sequestrar nem que seja por um dia.
+
+AAAAAAA o universo capitalista e tão ruim, mas fds bb vamos mata-lo e ele nunca mais causara problemas a morceguinhos apaixonados que em noites frias voam para prédios altos para brincar de se jogar juntos como se a vida de um dependesse do outro.
+
+Eu te amoooo muito obrigado por existir Yasmim / Morceguinha.
+
+FELIZZZ ANIVERSARIOOOOOOO
+    </p>
+    <footer>> invitation accepted • system stable</footer>
+  </section>
+
+      <section id="conto" class="content">
+    <h1>CONTO DOS GATINHOS</h1>
+    <p>
+Era uma vez, num Brasil antigo com construções e prédios que hoje chamamos de históricos, lá revirado numa quina de um beco escuro com muito lixo acumulado havia um pequeno ser, era felpudo como o algodão, esguio e elástico como uma pena, e com olhos profundos e verdes, aquele serzinho fitava o lixo a procura de alimento, já não comia a um tempo e sua barriga roncava, após achar uns restos de miúdos de carne bovina ele se deitou e abocanhou a refeição numa pressa e ferocidade que mandava as ruas, sua pelagem laranja com listras amarelas, já se via completamente suja, mas após a refeição, pulando de janela em janela, ele sobe no telhado de um casarão, um lugar que pra ele um observador curioso era um mistério, homens e mulheres humanos de pele mais escura ali ficavam amontoados aos montes e quando um humano branco ordenava eles obedeciam, sem nem questionar, ele acreditava que para esses humanos faltava a malícia de um gato, de ouvir e não obedecer juntar as patas e não escutar, e se te forçarem a se mexer, gritar e azunhar. Após terminar seu pensamento, posteriormente ele termina de se limpar pois sempre andava elegante e malandro como todos de sua espécie. Já era noite e mesmo gostando mais de pegar sol durante o dia, ele saiu andando sobre a luz da lua, saltando com grande graciosidade sobre os telhados que rangiam a cada salto, saltou correu e caminhou até a igrejinha do centro da pequena cidade, onde costumava deitar e observar com seus olhos atentos as pessoas os animais e a lua. Naquela noite vazia não havia muitas pessoas na rua, ele avistou uma mulher humana de vestidos trapinhos cabelos longos e esvoaçantes, caminhava com aparente pressa e insegurança enquanto atrás da moça vinha um homem aparentemente fora de si, nosso observador não entendia oq aquele homem tinha, mas sentia a insegurança no ar, mas avistou do outro lado um homen aparentemente confuso com a situação mas que se aproximou da moça sem oferecer perigo e espantou o outro homem para longe, assim a levou até onde seja que la estaria indo, nosso observador, cansado de observar histórias a serem contadas, deitou sua leve cabeça sobre suas patas e cochilou. Ouvia-se um miado sutil quase um chamado, chamado esse que chamou nosso jovem preguiçoso que ao acordar do seu sono e olha para frente, avistou ali do outro lado da praça diante da igreja, sobre uma casinha simples e baixa, uma gata, como nunca tinha visto antes, era negra e se colocava contra a luz da lua que por sua fez a iluminava com seu brilho, em sua cabeça avia algo que ele não enxergava muito bem, mas reluzia como algo brilhante que o encantava, rapidamente pulando em uma árvore, ele desceu da igrejinha, da árvore que sempre o assustou para o chão foi apenas um pulo, e poisé a correr em direção a aquela da qual ele não entendia pq mas sentia como um instinto que deveria se aproximar. Por sua vez a graciosa gata negra, pula para outro telhado e segue assim com graciosidade, de telhado em telhado, nosso atento perseguidor continua a admira-la mesmo sem entender bem o porquê, ele tenta miar alto parar chamar sua atenção, mas ela se mantém centrada na graça de seus pulos, e assim seguem ela por vários telhados, e ele acompanhando por várias esquinas. Até que de repente, a gatinha em volta de todo seu mistério salta de cima de um telhado para a calçada onde estava nosso caçador incansável, ela só cai alguns centímetros a frente, e dispara a correr em direção a área da praia que ali em sua frente os agraciava, ele então parte já cansado mas não poderia perde-la de vista, corre em rumo a aquela da qual mesmo no chão em seus pelos escuros refletiam a luz de uma lua que sobre sua grandiosidade naquela noite os observava, a misteriosa gata de repente sentou-se a fitar com seus olhos azuis o mar que parecia querer fugir em direção a lua, o nosso laranjinha sentou-se cansado ao seu lado, porém sem tempo para se recompor pois, ao seu lado admirado ele observa cada detalhe daquela que era tão perfeita que ele nunca avia de ter visto em suas 7 vidas, ela o olhou e sorriu como uma graciosa gata, naquele momento ele reparou que sobre sua cabeça existia um brilhante circular com uma pequena lua minguante pendurada, aquilo o deixou hipnotizado, ele se aproximou dela encostando seu corpinho cansado ao dela, e foi quando o dia amanheceu, com o nascer do sol em seu peito brilhava o símbolo daquele que todos os dias nascia, ao lado daquela que todas as noites brilhava ele sorriu e se sentiu completo como em nenhuma vida antes havia de ter se sentindo.
+
+Um ser de pelos negros vagava pelas ruas estreitas, cercadas por construções gigantescas e antigas. Enquanto caminhava, não sabia ao certo para onde estava indo, tampouco o que estava fazendo de sua vida. A gatinha de pelos pretos, perdida em seus próprios pensamentos, observava o mundo ao seu redor e questionava o quão injusto ele podia ser. Em meio aos pensamentos, seus olhos encontraram um ser de pelos alaranjados, cujo brilho parecia refletir em sua visão. Mas, o pelo dele estava sujo, marcado pelo descuido de quem revirava o lixo sem saber exatamente o que buscava. A gatinha o observava em silêncio, sem que ele notasse sua presença. Havia algo nele que a atraía, mas ela não compreendia o que era. Ao ver o mesmo, olhando os humanos com ar distante, reconheceu nele as mesmas dúvidas que a atormentavam ele também percebia o peso da injustiça, também acreditava que os humanos de pele escura, obrigados a carregar fardos pesados, mereciam ser livres. Logo depois, ela o viu tentando se limpar do lixo que grudava em seu pelo. A cena era ao mesmo tempo engraçada e duvidosa, despertando nela uma estranha mistura de sensações. Após minutos contemplando o gatinho alaranjado, decidiu seguir sua jornada, ainda sem entender por que havia perdido tanto tempo observando o gatinho. Saltando de telhado em telhado, a gatinha percebeu algo a seguir. Não era uma ameaça, mas uma presença. Um miado soou, cortando o silêncio da madrugada. Orgulhosa e desconfiada, ela preferiu não dar atenção, prosseguindo sem rumo, até que avistou o mar. Uma força silenciosa dentro dela pediu que parasse ali. Então, sentou diante da praia e se deixou apreciar a bela visão da lua. Segundos depois, sentiu a presença dele. O gatinho alaranjado se aproximava, e, pela primeira vez, ela o olhou de verdade. Cada detalhe de seu rosto, cada traço de sua alma, parecia impossível de ser ignorado. Uma conexão inexplicável nasceu naquele instante, como se o universo tivesse conspirado para unir os dois gatinhos. O brilho nos olhos dele se fixou na pequena lua minguante que habitava a testa da gatinha, e aquele olhar quase hipnótico arrancou dela um sorriso. Então, o gatinho encostou o corpo ao dela. E mesmo que nunca tivesse gostado da proximidade de outros, pela primeira vez, ela não se afastou. Sentiu paz. Quando o sol nasceu, não trouxe incômodo, como tantas outras vezes. Pelo contrário, pela primeira vez em sua existência, a gatinha de pelos negros sentiu completa. Era como se estivesse um propósito, algo que jamais sentiu antes.
+    </p>
+  </section>
+
+      <section id="poemas" class="content">
+    <h1>POEMAS</h1>
+    <p>
+        vinho
+Ela e doce e amarga como um vinho que me infraquece seu olhar e quente e me deixa dormente num mundo onde o tempo nos respeita, onde nossos sentimentos alem do inimaginavel florescem.
+morcegos
+Voar por ai como morcegos livres mas como vampiros a noite viver e ao dia... Ao dia ainda estaremos juntos e não a nada que isso possa mudar.
+Uma Deusa
+Uma deusa pagam, me perdi na mistuca que nela circula, me perdi na musica que em minha cabeça toca ao vela, me perdi no olhar de mil almas, me perdi nos seus feitiçõs suas cartas no infinito ceu que se forma nos seus olhos, estou perdido talvez oque me falte e fé neste ser divino.
+    </p>
+  </section>
+
+  <script>
+    function openTab(id) {
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
